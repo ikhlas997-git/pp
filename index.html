@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>برنامج الأستاذ</title>
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="font-link" rel="stylesheet" href="">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/img/icon.svg" alt="" class="brand-logo">
+        <div>
+          <div class="brand-name" data-i18n="app.name"></div>
+          <div class="brand-sub" id="brand-sub"></div>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot muted small" data-i18n="app.localNote"></div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn only-mobile" id="menu-btn" aria-label="menu"></button>
+        <div class="global-search" id="global-search">
+          <span class="gs-icon"></span>
+          <input type="search" id="gs-input" autocomplete="off" data-i18n-placeholder="search.global">
+          <kbd class="gs-kbd">Ctrl K</kbd>
+          <div class="gs-results" id="gs-results" hidden></div>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" id="lang-btn" data-i18n-title="settings.language"></button>
+          <button class="icon-btn" id="theme-btn" data-i18n-title="settings.theme"></button>
+          <a class="icon-btn" href="#/settings" id="settings-btn" data-i18n-title="nav.settings"></a>
+        </div>
+      </header>
+      <main class="content" id="view"></main>
+    </div>
+  </div>
+  <div id="toasts" class="toasts"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/db.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/schemas.js"></script>
+  <script src="assets/js/crud.js"></script>
+  <script src="assets/js/students.js"></script>
+  <script src="assets/js/grades.js"></script>
+  <script src="assets/js/drawings.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
