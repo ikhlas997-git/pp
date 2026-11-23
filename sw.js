@@ -1,7 +1,7 @@
 /* Offline support: network-first for app files, falling back to cache */
-const CACHE = 'teacher-app-v1';
+const CACHE = 'teacher-app-v2';
 const ASSETS = [
-  './', './index.html', './manifest.webmanifest', './assets/css/app.css', './assets/img/icon.svg', './assets/vendor/xlsx.full.min.js',
+  './', './index.html', './manifest.webmanifest', './assets/css/app.css', './assets/img/icon.svg', './assets/img/icon-192.png', './assets/img/icon-512.png', './assets/img/apple-touch-icon.png', './assets/vendor/xlsx.full.min.js',
   ...['i18n', 'db', 'ui', 'settings', 'schemas', 'crud', 'students', 'grades', 'drawings', 'search', 'dashboard', 'app'].map(f => `./assets/js/${f}.js`)
 ];
 

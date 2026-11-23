@@ -1,11 +1,33 @@
 {
-  "name": "برنامج الأستاذ - Teacher App",
-  "short_name": "برنامج الأستاذ",
+  "name": "prof — برنامج الأستاذ",
+  "short_name": "prof",
+  "id": "./index.html",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "dir": "rtl",
   "lang": "ar",
-  "icons": [{ "src": "assets/img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
